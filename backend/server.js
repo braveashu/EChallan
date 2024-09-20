@@ -18,7 +18,7 @@ const port = process.env.PORT || 5001;
 app.use(bodyParser.json());
 app.use(cors());
 
-const mongoUrl = process.env.MONGO_URL;
+const mongoUrl = process.env.MONGO_URI;
 mongoose.connect(mongoUrl);
 
 const db = mongoose.connection;
